@@ -1,0 +1,183 @@
+:root {
+    --primary-color: #6C9A8B; /* Soft green */
+    --secondary-color: #A8DCD9; /* Light teal */
+    --accent-color: #E2B1B1; /* Muted pink */
+    --background-color: #F4F4F4; /* Light gray */
+    --text-color: #333333; /* Dark gray */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+    font-family: 'Merriweather', serif;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.section {
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5A877A; /* Darker green */
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #8FBDB9; /* Darker teal */
+}
+
+.btn-info {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #D19A9A; /* Darker pink */
+}
+
+.btn-danger {
+    background-color: #E2B1B1; /* Muted pink */
+    border: none;
+    color: var(--text-color);
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #D19A9A; /* Darker pink */
+}
+
+#breathing-circle {
+    width: 150px;
+    height: 150px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 20px auto;
+    transition: all 4s ease;
+}
+
+.breath-text {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--primary-color);
+    font-family: 'Merriweather', serif;
+}
+
+.journal-entry {
+    width: 100%;
+    height: 100px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#voice-status {
+    font-style: italic;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-family: 'Merriweather', serif;
+}
+
+.music-player {
+    margin-top: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 315px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Mindfulness Timer */
+#mindfulness-timer {
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+/* Catalog Section */
+.catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.catalog-item {
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.catalog-item h3 {
+    font-family: 'Merriweather', serif;
+    color: var(--primary-color);
+}
+
+.catalog-item p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-color);
+}
+
+.catalog-item a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
